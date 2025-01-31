@@ -33,11 +33,11 @@ function getUserInfo() {
 }
 
 // 유저 정보를 렌더링 시키는 함수
-function renderUserInfo(userInfo) {
+function renderUserInfo(user) {
   main.style.display = "block";
   form.style.display = "none";
-  userName.textContent = userInfo.user_name;
-  userDetail.textContent = userInfo.user_info;
+  userName.textContent = user.user_name;
+  userDetail.textContent = user.user_info;
 }
 
 // 유저 정보를 숨기는 함수
